@@ -86,27 +86,27 @@ print(nfl_12)'''
 nfl_div = nfl.find_all('div')
 #print(nfl_div)
 
-nfl_main = nfl.find(id="main-content")
+n"fl_main = nfl.find(id="main-content")
 #print(nfl_main.prettify())
 
 nfl_roster = nfl_main.find(summary="Roster")
-#print(nfl_roster.prettify())
+# print("hi")
 
 nfl_roster_body = nfl_main.find("tbody")
 #print(nfl_roster_body.prettify())
 
-nfl_roster_body = nfl_roster.find('tbody')
+# nfl_roster_body = nfl_roster.find('tbody')
 #print(nfl_roster.prettify())
 
 nfl_roster_body_tr_first = nfl_roster_body.find('tr')
 #print(nfl_roster_body_tr_first.prettify())
 
-#first_name = nfl_roster_body_tr_first.find_all('td')[7].text
-#print(first_name)
+first_name = nfl_roster_body_tr_first.find_all('td')[7].text
+print(first_name)
 numb = 0
 
-first_name = nfl_roster_body_tr_first.find_all('td')[1].text
-print(first_name)
+# first_name = nfl_roster_body_tr_first.find_all('td')[7].text
+# print(first_name)
 
 
 with open('first_name.csv', 'a') as csv_file:
