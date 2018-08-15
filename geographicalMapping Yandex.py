@@ -13,7 +13,6 @@ geopy.geocoders.options.default_ssl_context = ctx
 
 plotly.tools.set_credentials_file(username='krishnar', api_key='aP9JtUuuVf19iF1GBbMZ')
 player_lat_long = pd.read_csv('player_file.csv')
-player_lat_long_home = pd.read_csv('player_hometown.csv')
 
 data = [dict(
     type = 'scattergeo',
@@ -21,20 +20,18 @@ data = [dict(
     lon = player_lat_long['Longitude'],
     lat = player_lat_long['Latitude'],
     text = player_lat_long['Player'] + ' ',
-    mode = 'markers',
-    marker = dict(
-        color = "rgb(100, 25, 25)"
-    )
+    mode = 'markers'
     )]
 
 layout = dict(
-    title = '49ers_college',
+    title = '49ers',
     geo = dict(
         scope='usa',
         projection=dict(type='albers usa'),
         showland = True,
-        landcolor = "rgb(255, 255, 255)",
-        subunitcolor = "rgb(0, 217, 217)",
+        landcolor = "rgb(250, 250, 250",
+        subunitcolor = "rgb(217, 217, 217)",
+        countrycolor = "rgb(217, 217, 217)",
         countrywidth = 0.5,
         subunitwidth = 0.5
     )

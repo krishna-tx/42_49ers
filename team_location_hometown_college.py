@@ -27,6 +27,19 @@ data = [dict(
     )
     )]
 
+data_home = [dict(
+    type = 'scattergeo',
+    locationmode = 'USA-states',
+    lon = player_lat_long_home['Longitude'],
+    lat = player_lat_long_home['Latitude'],
+    text = player_lat_long_home['Player'] + ' ',
+    mode = 'markers',
+    marker = dict(
+        color = "rgb(0, 205, 250)"
+    )
+    )]
+
+
 layout = dict(
     title = '49ers_college',
     geo = dict(
@@ -40,5 +53,20 @@ layout = dict(
     )
 )
 
+layout_home = dict(
+    title = '49ers_hometown',
+    geo = dict(
+        scope='usa',
+        projection=dict(type='albers usa'),
+        showland = True,
+        landcolor = "rgb(255, 255, 255)",
+        subunitcolor = "rgb(0, 217, 217)",
+        countrywidth = 0.5,
+        subunitwidth = 0.5
+    )
+)
+
 fig = dict(data=data, layout=layout)
 py.plot(fig, validate=False, filename='player_file.csv')
+fig_home = dict(data=data_home, layout=layout_home)
+py.plot(fig_home, validate=False, filename='player_hometown.csv')
