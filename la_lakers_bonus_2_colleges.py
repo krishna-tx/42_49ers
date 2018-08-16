@@ -11,7 +11,7 @@ ctx = ssl.create_default_context(cafile=certifi.where())
 geopy.geocoders.options.default_ssl_context = ctx
 
 
-plotly.tools.set_credentials_file(username='krishnar', api_key='aP9JtUuuVf19iF1GBbMZ')
+plotly.tools.set_credentials_file(username='krishnar', api_key='lt8fyOo9cYYrn4BUKyQ6')
 player_lat_long = pd.read_csv('la_lakers_colleges.csv')
 
 data = [dict(
