@@ -1,0 +1,328 @@
+Making API request to 'https://api.mysportsfeeds.com/v1.2/pull/nfl/upcoming/player_injuries.json'.
+  with headers:
+{'Accept-Encoding': 'gzip', 'User-Agent': 'MySportsFeeds Python/1.0.0 (Linux-4.4.0-1061-aws-x86_64-with-debian-9.5)', 'Authorization': 'Basic N2FmNjgwMzctMmYzZi00YmY1LWJiZDUtMTczYWQyOkRrMzBSUUhU'}
+ and params:
+{'force': 'false'}
+Data hasn't changed since last call
+{
+    "playerinjuries": {
+        "lastUpdatedOn": "2018-08-06 6:57:29 PM",
+        "playerentry": [
+            {
+                "player": {
+                    "ID": "7602",
+                    "LastName": "Branch",
+                    "FirstName": "Alan",
+                    "JerseyNumber": "97",
+                    "Position": "NT",
+                    "Height": "6'6\"",
+                    "Weight": "350",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "knee (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "7599",
+                    "LastName": "Brown",
+                    "FirstName": "Malcom",
+                    "JerseyNumber": "90",
+                    "Position": "DT",
+                    "Height": "6'2\"",
+                    "Weight": "320",
+                    "BirthDate": "1994-02-02",
+                    "Age": "24",
+                    "BirthCity": "Brenham, TX",
+                    "BirthCountry": "USA",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "foot (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "7622",
+                    "LastName": "Butler",
+                    "FirstName": "Malcolm",
+                    "JerseyNumber": "21",
+                    "Position": "CB",
+                    "Height": "5'11\"",
+                    "Weight": "190",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "flu (Probable)"
+            },
+            {
+                "player": {
+                    "ID": "8052",
+                    "LastName": "Cox",
+                    "FirstName": "Fletcher",
+                    "JerseyNumber": "91",
+                    "Position": "DE",
+                    "Height": "6'4\"",
+                    "Weight": "300",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "54",
+                    "City": "Philadelphia",
+                    "Name": "Eagles",
+                    "Abbreviation": "PHI"
+                },
+                "injury": "calf (Probable)"
+            },
+            {
+                "player": {
+                    "ID": "6275",
+                    "LastName": "Darby",
+                    "FirstName": "Ronald",
+                    "JerseyNumber": "28",
+                    "Position": "CB",
+                    "Height": "5'11\"",
+                    "Weight": "193",
+                    "BirthDate": "1994-01-02",
+                    "Age": "24",
+                    "BirthCity": "Oxon Hill, MD",
+                    "BirthCountry": "USA",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "54",
+                    "City": "Philadelphia",
+                    "Name": "Eagles",
+                    "Abbreviation": "PHI"
+                },
+                "injury": "illness (Probable)"
+            },
+            {
+                "player": {
+                    "ID": "7629",
+                    "LastName": "Ebner",
+                    "FirstName": "Nate",
+                    "JerseyNumber": "43",
+                    "Position": "DB",
+                    "Height": "6'0\"",
+                    "Weight": "220",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "knee (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "7705",
+                    "LastName": "Ellerbe",
+                    "FirstName": "Dannell",
+                    "JerseyNumber": "59",
+                    "Position": "OLB",
+                    "Height": "6'1\"",
+                    "Weight": "245",
+                    "BirthDate": "1985-11-29",
+                    "Age": "32",
+                    "BirthCity": "Hamlet, NC",
+                    "BirthCountry": "USA",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "54",
+                    "City": "Philadelphia",
+                    "Name": "Eagles",
+                    "Abbreviation": "PHI"
+                },
+                "injury": "hamstring (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "6166",
+                    "LastName": "Jernigan",
+                    "FirstName": "Timmy",
+                    "JerseyNumber": "97",
+                    "Position": "DT",
+                    "Height": "6'2\"",
+                    "Weight": "302",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "54",
+                    "City": "Philadelphia",
+                    "Name": "Eagles",
+                    "Abbreviation": "PHI"
+                },
+                "injury": "illness (Probable)"
+            },
+            {
+                "player": {
+                    "ID": "9940",
+                    "LastName": "Jones",
+                    "FirstName": "Jonathan",
+                    "JerseyNumber": "31",
+                    "Position": "CB",
+                    "Height": "5'10\"",
+                    "Weight": "190",
+                    "BirthDate": "1993-09-20",
+                    "Age": "24",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "foot (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "13283",
+                    "LastName": "Jones",
+                    "FirstName": "Sidney",
+                    "JerseyNumber": "22",
+                    "Position": "CB",
+                    "Height": "6'0\"",
+                    "Weight": "181",
+                    "BirthDate": "1996-05-21",
+                    "Age": "22",
+                    "BirthCity": "Diamond Bar, CA",
+                    "BirthCountry": "USA",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "54",
+                    "City": "Philadelphia",
+                    "Name": "Eagles",
+                    "Abbreviation": "PHI"
+                },
+                "injury": "hamstring (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "7632",
+                    "LastName": "King",
+                    "FirstName": "Brandon",
+                    "JerseyNumber": "36",
+                    "Position": "DB",
+                    "Height": "6'2\"",
+                    "Weight": "220",
+                    "BirthDate": "1993-06-08",
+                    "Age": "25",
+                    "BirthCity": "Alabaster, AL",
+                    "BirthCountry": "USA",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "knee (Probable)"
+            },
+            {
+                "player": {
+                    "ID": "7633",
+                    "LastName": "McCourty",
+                    "FirstName": "Devin",
+                    "JerseyNumber": "32",
+                    "Position": "DB",
+                    "Height": "5'10\"",
+                    "Weight": "195",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "shoulder (Probable)"
+            },
+            {
+                "player": {
+                    "ID": "6862",
+                    "LastName": "Waddle",
+                    "FirstName": "LaAdrian",
+                    "JerseyNumber": "68",
+                    "Position": "OT",
+                    "Height": "6'6\"",
+                    "Weight": "328",
+                    "BirthDate": "1991-07-21",
+                    "Age": "27",
+                    "BirthCity": "College Station, TX",
+                    "BirthCountry": "USA",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "knee (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "9711",
+                    "LastName": "Walker",
+                    "FirstName": "Joe",
+                    "JerseyNumber": "59",
+                    "Position": "ILB",
+                    "Height": "6'2\"",
+                    "Weight": "236",
+                    "BirthDate": "1992-12-11",
+                    "Age": "25",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "54",
+                    "City": "Philadelphia",
+                    "Name": "Eagles",
+                    "Abbreviation": "PHI"
+                },
+                "injury": "neck (Questionable)"
+            },
+            {
+                "player": {
+                    "ID": "13084",
+                    "LastName": "Wise",
+                    "FirstName": "Deatrich",
+                    "JerseyNumber": "91",
+                    "Position": "DE",
+                    "Height": "6'5\"",
+                    "Weight": "271",
+                    "BirthDate": "1994-07-26",
+                    "Age": "24",
+                    "IsRookie": "false"
+                },
+                "team": {
+                    "ID": "50",
+                    "City": "New England",
+                    "Name": "Patriots",
+                    "Abbreviation": "NE"
+                },
+                "injury": "concussion (Probable)"
+            }
+        ]
+    }
+}
