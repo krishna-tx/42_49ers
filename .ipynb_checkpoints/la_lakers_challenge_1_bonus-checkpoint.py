@@ -12,15 +12,26 @@ players = nba_main.find_all("section", attrs={"class": "nba-player-index__trendi
 player_detail_tags = nba.find_all("div", attrs={"class" : "nba-player-index__details"})
 wt_total = 0
 ht_total = 0
+
+player_name_tags = nba.find_all("p", attrs={"class": "nba-player-index__name"})
+with open('la_lakers_names.csv', 'w') as csv_file:
+    for player_name_tag in player_name_tags:
+        br_tag = player_name_tag.find("br")
+        if br_tag is not None:
+            first_name = br_tag.previous
+            last_name = br_tag.next
+            writer = csv.writer(csv_file)
+            writer.writerow([first_name, last_name])
+            
 for player_detail_tag in player_detail_tags:
     details = player_detail_tag.find_all("span")
+    pos = details[0].text
     ht_wt = details[1].text
     ht, wt = ht_wt.split("|")
     wt_lbs = wt.split("lbs")[0].strip()
-
     if wt_lbs:
         wt_total = wt_total + int(wt_lbs)
-        
+
     ft, inch = ht.split("ft")
     ft = ft.strip()
     inch = inch.strip()

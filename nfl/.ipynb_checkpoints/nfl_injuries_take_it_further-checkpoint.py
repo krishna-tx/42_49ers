@@ -24,6 +24,6 @@ avg_height = total_height/15
 avg_height = avg_height/12
 inch_height = avg_height-int(avg_height)
 inch_height = inch_height*10
-print("The average weight for an injured nfl player is:", total_weight/15, "lbs")
-#inch_height = (avg_height - int(avg_height))*12
+print("The average weight for an injured nfl player is:", int(total_weight/15), "lbs")
+
 print("The average height for an injured nfl player is:", int(avg_height), "ft", round(inch_height), "inch")

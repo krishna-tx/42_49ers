@@ -7,6 +7,8 @@ Data_query.authenticate('afc252ab406ec30e66d849ab957c6cc6275bbda94b2032a1f6f0c8b
 
 Output = Data_query.msf_get_data(league='nfl', season='upcoming', feed='active_players', team=['SF'], format='json')
 
+r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
+
 # states = {}
 
 # for i in range(108):

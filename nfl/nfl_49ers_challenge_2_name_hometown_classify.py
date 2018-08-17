@@ -10,18 +10,14 @@ Output = Data_query.msf_get_data(league='nfl', season='upcoming', feed='active_p
 states = {}
 
 for i in range(108):
-    for key, value in Output["activeplayers"]["playerentry"][i]["player"].items():
-        if key == "BirthCity":
-            cities = value.split(",")
-            if len(cities) == 2:
-                city = cities[0]
-                state = cities[1]
-            else:
-                city = cities[0]
-                state = ""
-            if state not in states.keys():
+    player_info = Output["activeplayers"]["playerentry"][i]["player"]
+    print(player_info["FirstName"], player_info["LastName"])
+    if "BirthCity" in player_info:
+        city_state = player_info["BirthCity"]
+        if "," in city_state:
+            city, state = city_state.split(",")
+            if state not in states: 
                 states[state] = {}
-            states[state][city] = {}
-#         states[state][city] = player["FirstName"] + ' ' + player["LastName"]
+            states[state][city] = player_info["FirstName"] + " " + player_info["LastName"]
     
 print(json.dumps(states, indent=4))
